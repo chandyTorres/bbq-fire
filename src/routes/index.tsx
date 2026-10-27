@@ -19,7 +19,8 @@ export const Route = createFileRoute("/")({
 });
 
 const WHATSAPP_NUMBER = "(18) 99815-0854";
-const WHATSAPP_LINK = "https://wa.me/5518998150854";
+const WHATSAPP_LINK =
+  "https://wa.me/5518998150854?text=Ol%C3%A1%21%20Vim%20pelo%20card%C3%A1pio%20do%20BBQ%20FIRE%20e%20gostaria%20de%20fazer%20um%20pedido.";
 
 function WhatsAppIcon({ className = "" }: { className?: string }) {
   return (
@@ -29,13 +30,7 @@ function WhatsAppIcon({ className = "" }: { className?: string }) {
   );
 }
 
-function WhatsAppButton({
-  label,
-  className = "",
-}: {
-  label: string;
-  className?: string;
-}) {
+function WhatsAppButton({ className = "" }: { className?: string }) {
   return (
     <a
       href={WHATSAPP_LINK}
@@ -44,14 +39,10 @@ function WhatsAppButton({
       className={`inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-6 py-3 text-whatsapp-foreground shadow-lg transition hover:brightness-110 ${className}`}
     >
       <WhatsAppIcon className="h-5 w-5 shrink-0" />
-      <span className="font-display text-xl tracking-wider">{label}</span>
-      <span className="text-sm font-semibold">{WHATSAPP_NUMBER}</span>
+      <span className="font-display text-xl tracking-wider">FAÇA SEU PEDIDO</span>
     </a>
   );
 }
-
-
-
 
 const menu = [
   {
@@ -103,7 +94,7 @@ export function Index() {
           <img src={logo.url} alt="BBQ Fire" className="h-40 w-40 rounded-full shadow-2xl md:h-52 md:w-52" />
           <h1 className="mt-3 font-display text-3xl tracking-[0.4em] text-accent">Cardápio</h1>
           <p className="mt-2 text-muted-foreground">Lanches · Porções · Bebidas</p>
-          <WhatsAppButton label="Chamar no WhatsApp" className="mt-5" />
+          <WhatsAppButton className="mt-5" />
         </div>
 
       </header>
@@ -136,7 +127,7 @@ export function Index() {
             </section>
             {idx === 1 && (
               <div className="flex flex-col items-center gap-1 py-2 text-center">
-                <WhatsAppButton label="Pedir pelo WhatsApp" />
+                <WhatsAppButton />
                 <p className="text-xs text-muted-foreground">
                   É só chamar e mandar seu pedido — a gente confirma na hora.
                 </p>
@@ -148,7 +139,7 @@ export function Index() {
       </div>
       <footer className="border-t py-10 text-center">
         <p className="text-sm text-muted-foreground">BBQ Fire · Feito na brasa 🔥</p>
-        <WhatsAppButton label="Chamar no WhatsApp" className="mt-4" />
+        <WhatsAppButton className="mt-4" />
         <a
           href={WHATSAPP_LINK}
           target="_blank"
@@ -158,7 +149,6 @@ export function Index() {
           {WHATSAPP_NUMBER}
         </a>
       </footer>
-
 
       <a
         href={WHATSAPP_LINK}
