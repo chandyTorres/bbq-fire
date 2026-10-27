@@ -15,8 +15,9 @@ describe("WhatsApp call to action", () => {
       .getAllByRole("link")
       .filter((l) => l.getAttribute("href") === LINK);
 
-    // 3 CTA buttons + the floating button pinned to the corner
-    expect(links).toHaveLength(4);
+    // 3 CTA buttons + the footer number + the floating button pinned to the corner
+    expect(links).toHaveLength(5);
+
 
     for (const label of ["Chamar no WhatsApp", "Pedir pelo WhatsApp", "Chamar no WhatsApp"]) {
       expect(links.some((l) => l.textContent?.includes(label))).toBe(true);
