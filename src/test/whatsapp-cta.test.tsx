@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
-import { Route } from "@/routes/index";
+import { Index } from "@/routes/index";
 
 // The three CTA buttons (top, middle, footer) must all open the same WhatsApp chat.
 const LINK = "https://wa.me/5518998150854";

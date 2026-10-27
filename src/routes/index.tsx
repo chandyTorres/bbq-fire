@@ -93,7 +93,7 @@ const menu = [
   },
 ];
 
-function Index() {
+export function Index() {
   return (
     <main className="min-h-screen">
       <header className="relative h-[60vh] min-h-80 overflow-hidden">
