@@ -14,6 +14,8 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-border: var(--border);
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-foreground: var(--whatsapp-foreground);
 }
 
 :root {
@@ -27,6 +29,8 @@
   --accent: oklch(0.8 0.16 80);
   --border: oklch(0.3 0.02 40);
   --gradient-fade: linear-gradient(to bottom, transparent, var(--background));
+  --whatsapp: oklch(0.77 0.18 155);
+  --whatsapp-foreground: oklch(0.18 0.03 155);
 }
 
 @layer base {
