@@ -8,7 +8,8 @@ const LINK = "https://wa.me/5518998150854";
 
 describe("WhatsApp call to action", () => {
   it("shows a CTA button in the top, the middle and the footer, all opening the same chat", () => {
-    render(<Route.component />);
+    render(<Index />);
+
 
     const links = screen
       .getAllByRole("link")
@@ -23,7 +24,7 @@ describe("WhatsApp call to action", () => {
   });
 
   it("shows the phone number on every CTA", () => {
-    render(<Route.component />);
+    render(<Index />);
     expect(screen.getAllByText("(18) 99815-0854").length).toBeGreaterThanOrEqual(3);
   });
 });
