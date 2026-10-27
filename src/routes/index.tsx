@@ -108,7 +108,28 @@ function Index() {
           </section>
         ))}
       </div>
-      <footer className="border-t py-8 text-center text-sm text-muted-foreground">BBQ Fire · Feito na brasa 🔥</footer>
+      <footer className="border-t py-8 text-center text-sm text-muted-foreground">
+        <p>BBQ Fire · Feito na brasa 🔥</p>
+        <a
+          href={WHATSAPP_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-flex items-center gap-2 text-whatsapp hover:underline"
+        >
+          <WhatsAppIcon className="h-4 w-4" />
+          {WHATSAPP_NUMBER}
+        </a>
+      </footer>
+
+      <a
+        href={WHATSAPP_LINK}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-4 right-4 z-20 flex items-center gap-2 rounded-full bg-whatsapp px-3 py-2 text-whatsapp-foreground shadow-lg transition hover:brightness-110"
+      >
+        <WhatsAppIcon className="h-5 w-5" />
+        <span className="text-sm font-semibold">{WHATSAPP_NUMBER}</span>
+      </a>
     </main>
   );
 }
