@@ -1,13 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import hero from "@/assets/hero.jpg";
+import logo from "@/assets/logo.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "BBQ Fire — Cardápio" },
-      { name: "description", content: "Cardápio do BBQ Fire: hambúrgueres, carnes e porções na brasa." },
+      { name: "description", content: "Cardápio do BBQ Fire: hambúrgueres, lanches, porções e bebidas." },
       { property: "og:title", content: "BBQ Fire — Cardápio" },
-      { property: "og:description", content: "Hambúrgueres, carnes e porções na brasa." },
+      { property: "og:description", content: "Hambúrgueres, lanches, porções e bebidas." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -62,11 +63,9 @@ function Index() {
         <img src={hero} alt="Hambúrguer e costela na brasa" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-fade" />
         <div className="relative flex h-full flex-col items-center justify-end pb-10 text-center">
-          <p className="font-display text-xl tracking-[0.4em] text-accent">Cardápio</p>
-          <h1 className="font-display text-7xl leading-none md:text-9xl">
-            BBQ <span className="text-primary">Fire</span>
-          </h1>
-          <p className="mt-2 text-muted-foreground">Hambúrgueres · Carnes · Porções</p>
+          <img src={logo.url} alt="BBQ Fire" className="h-40 w-40 rounded-full shadow-2xl md:h-52 md:w-52" />
+          <h1 className="mt-3 font-display text-3xl tracking-[0.4em] text-accent">Cardápio</h1>
+          <p className="mt-2 text-muted-foreground">Lanches · Porções · Bebidas</p>
         </div>
       </header>
 
@@ -88,9 +87,9 @@ function Index() {
                   <div className="flex items-baseline gap-3">
                     <h3 className="text-lg font-semibold">{i.name}</h3>
                     <span className="flex-1 border-b border-dashed" />
-                    <span className="font-display text-2xl text-accent">R$ {i.price}</span>
+                    <span className="font-display text-2xl text-accent">{i.price ? `R$ ${i.price}` : "Consulte"}</span>
                   </div>
-                  <p className="mt-1 text-sm text-muted-foreground">{i.desc}</p>
+                  {i.desc && <p className="mt-1 text-sm text-muted-foreground">{i.desc}</p>}
                 </li>
               ))}
             </ul>
