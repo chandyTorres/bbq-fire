@@ -17,30 +17,40 @@ export const Route = createFileRoute("/")({
 
 const menu = [
   {
-    title: "Hambúrgueres",
+    title: "Lanches",
     items: [
-      { name: "Fire Classic", desc: "Blend 180g, cheddar, cebola caramelizada, molho da casa", price: "32,90" },
-      { name: "Smoke Bacon", desc: "Blend 180g, bacon defumado, queijo prato, barbecue", price: "36,90" },
-      { name: "Double Fire", desc: "2 blends 150g, duplo cheddar, picles, maionese defumada", price: "42,90" },
-      { name: "Costela Burger", desc: "Costela desfiada, queijo coalho, cebola crispy", price: "39,90" },
-    ],
-  },
-  {
-    title: "Carnes",
-    items: [
-      { name: "Picanha na Brasa (400g)", desc: "Acompanha farofa, vinagrete e pão de alho", price: "89,90" },
-      { name: "Costela BBQ (500g)", desc: "Assada 12h, glaceada no barbecue", price: "79,90" },
-      { name: "Fraldinha (400g)", desc: "Ao ponto, com chimichurri", price: "69,90" },
-      { name: "Linguiça Artesanal", desc: "Porção com mandioca cozida", price: "42,90" },
+      { name: "Onion", desc: "Hambúrguer 150g, queijo americano, bacon crocante, 3 anéis de cebola onion, barbecue e maionese da casa", price: "" },
+      { name: "Prime", desc: "Dois hambúrgueres 150g, duas fatias de queijo americano, duas camadas de bacon e maionese da casa", price: "" },
+      { name: "Crispy", desc: "Hambúrguer 150g, queijo americano, bacon, cebola crispy, barbecue e maionese", price: "" },
+      { name: "Cremoso", desc: "Hambúrguer 150g, queijo americano, cebola caramelizada, catupiry, bacon e maionese", price: "" },
+      { name: "Costela", desc: "Hambúrguer 150g, queijo americano, costela desfiada, catupiry e alho frito", price: "45,00" },
+      { name: "Cupim", desc: "Hambúrguer 150g, queijo americano, cupim desfiado, catupiry e alho frito", price: "45,00" },
+      { name: "Salada", desc: "Hambúrguer 150g, queijo americano, cebola, alface, tomate e maionese da casa", price: "32,00" },
+      { name: "Salada Bacon", desc: "Hambúrguer 150g, queijo americano, bacon, cebola, alface, tomate e maionese da casa", price: "39,00" },
+      { name: "Texas", desc: "Hambúrguer 150g, queijo americano, bacon crocante e maionese da casa", price: "36,00" },
+      { name: "Burger", desc: "Hambúrguer 150g, queijo americano e maionese da casa", price: "29,00" },
+      { name: "Kids", desc: "Hambúrguer 150g, queijo americano e maionese. Acompanha fritas e suco Kapo", price: "" },
     ],
   },
   {
     title: "Porções",
     items: [
-      { name: "Batata Rústica", desc: "Com páprica e maionese da casa", price: "24,90" },
-      { name: "Onion Rings", desc: "Anéis de cebola empanados", price: "26,90" },
-      { name: "Mandioca Frita", desc: "Crocante, com queijo ralado", price: "22,90" },
-      { name: "Tábua Fire", desc: "Picanha, linguiça, batata e queijo coalho", price: "99,90" },
+      { name: "Batata Individual", desc: "140g", price: "10,00" },
+      { name: "Batata 400g", desc: "400g de batata frita", price: "30,00" },
+      { name: "Batata Costela", desc: "400g de batata, 200g de costela desfiada e sour cream", price: "50,00" },
+      { name: "Batata Cupim", desc: "400g de batata, 200g de cupim desfiado e sour cream", price: "50,00" },
+      { name: "Onion Individual", desc: "8 anéis de cebola", price: "15,00" },
+      { name: "Onion Família", desc: "20 anéis de cebola", price: "35,00" },
+    ],
+  },
+  {
+    title: "Bebidas",
+    items: [
+      { name: "Coca-Cola lata", desc: "", price: "7,00" },
+      { name: "Coca-Cola Zero lata", desc: "", price: "7,00" },
+      { name: "Suco Kapo", desc: "", price: "5,00" },
+      { name: "Água", desc: "", price: "4,00" },
+      { name: "Água com gás", desc: "", price: "5,00" },
     ],
   },
 ];
