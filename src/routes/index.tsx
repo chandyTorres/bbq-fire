@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import hero from "@/assets/hero.jpg";
 import logo from "@/assets/logo.jpg.asset.json";
+import crispy from "@/assets/crispy.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -44,13 +45,13 @@ function WhatsAppButton({ className = "" }: { className?: string }) {
   );
 }
 
-const menu = [
+const menu: { title: string; items: { name: string; desc: string; price: string; image?: string }[] }[] = [
   {
     title: "Lanches",
     items: [
       { name: "Onion", desc: "Hambúrguer 150g, queijo americano, bacon crocante, 3 anéis de cebola onion, barbecue e maionese da casa", price: "34,00" },
       { name: "Prime", desc: "Dois hambúrgueres 150g, duas fatias de queijo americano, duas camadas de bacon e maionese da casa", price: "43,00" },
-      { name: "Crispy", desc: "Hambúrguer 150g, queijo americano, bacon, cebola crispy, barbecue e maionese", price: "32,00" },
+      { name: "Crispy", desc: "Hambúrguer 150g, queijo americano, bacon, cebola crispy, barbecue e maionese", price: "32,00", image: crispy.url },
       { name: "Cremoso", desc: "Hambúrguer 150g, queijo americano, cebola caramelizada, catupiry, bacon e maionese", price: "38,00" },
       { name: "Costela", desc: "Hambúrguer 150g, queijo americano, costela desfiada, catupiry e alho frito", price: "45,00" },
       { name: "Cupim", desc: "Hambúrguer 150g, queijo americano, cupim desfiado, catupiry e alho frito", price: "45,00" },
@@ -114,13 +115,16 @@ export function Index() {
               <h2 className="mb-6 font-display text-5xl text-primary">{s.title}</h2>
               <ul className="space-y-5">
                 {s.items.map((i) => (
-                  <li key={i.name} className="rounded-lg border bg-card p-4">
+                  <li key={i.name} className={`overflow-hidden rounded-lg border bg-card ${i.image ? "grid md:grid-cols-[240px_1fr]" : "p-4"}`}>
+                    {i.image && <img src={i.image} alt="Crispy do BBQ Fire" loading="lazy" className="aspect-square w-full object-cover object-center" />}
+                    <div className={i.image ? "min-w-0 self-center p-4 md:p-5" : ""}>
                     <div className="flex items-baseline gap-3">
                       <h3 className="text-lg font-semibold">{i.name}</h3>
                       <span className="flex-1 border-b border-dashed" />
-                      <span className="font-display text-2xl text-accent">{i.price ? `R$ ${i.price}` : "Consulte"}</span>
+                       <span className="shrink-0 whitespace-nowrap font-display text-2xl text-accent">{i.price ? `R$ ${i.price}` : "Consulte"}</span>
                     </div>
                     {i.desc && <p className="mt-1 text-sm text-muted-foreground">{i.desc}</p>}
+                    </div>
                   </li>
                 ))}
               </ul>
