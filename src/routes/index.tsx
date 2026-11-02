@@ -5,6 +5,7 @@ import hero from "@/assets/hero.jpg";
 import logo from "@/assets/logo.jpg.asset.json";
 import crispy from "@/assets/crispy.jpeg.asset.json";
 import onion from "@/assets/onion.jpeg.asset.json";
+import prime from "@/assets/prime.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -51,7 +52,7 @@ const menu: { title: string; items: { name: string; desc: string; price: string;
     title: "Lanches",
     items: [
       { name: "Onion", desc: "Hambúrguer 150g, queijo americano, bacon crocante, 3 anéis de cebola onion, barbecue e maionese da casa", price: "34,00", image: onion.url },
-      { name: "Prime", desc: "Dois hambúrgueres 150g, duas fatias de queijo americano, duas camadas de bacon e maionese da casa", price: "43,00" },
+      { name: "Prime", desc: "Dois hambúrgueres 150g, duas fatias de queijo americano, duas camadas de bacon e maionese da casa", price: "43,00", image: prime.url },
       { name: "Crispy", desc: "Hambúrguer 150g, queijo americano, bacon, cebola crispy, barbecue e maionese", price: "32,00", image: crispy.url },
       { name: "Cremoso", desc: "Hambúrguer 150g, queijo americano, cebola caramelizada, catupiry, bacon e maionese", price: "38,00" },
       { name: "Costela", desc: "Hambúrguer 150g, queijo americano, costela desfiada, catupiry e alho frito", price: "45,00" },
