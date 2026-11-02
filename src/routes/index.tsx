@@ -6,7 +6,7 @@ import logo from "@/assets/logo.jpg.asset.json";
 import crispy from "@/assets/crispy.jpeg.asset.json";
 import onion from "@/assets/onion.jpeg.asset.json";
 import prime from "@/assets/prime.jpeg.asset.json";
-import cremoso from "@/assets/cremoso.jpeg.asset.json";
+import cremoso from "@/assets/cremoso-atual.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
