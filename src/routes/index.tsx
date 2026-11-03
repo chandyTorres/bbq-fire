@@ -8,7 +8,7 @@ import onion from "@/assets/onion.jpeg.asset.json";
 import prime from "@/assets/prime-novo.jpeg.asset.json";
 import cremoso from "@/assets/cremoso-atual.jpeg.asset.json";
 import costela from "@/assets/costela.jpeg.asset.json";
-import salada from "@/assets/salada.jpeg.asset.json";
+import salada from "@/assets/salada-nova.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
