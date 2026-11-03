@@ -8,6 +8,7 @@ import onion from "@/assets/onion.jpeg.asset.json";
 import prime from "@/assets/prime-novo.jpeg.asset.json";
 import cremoso from "@/assets/cremoso-atual.jpeg.asset.json";
 import costela from "@/assets/costela.jpeg.asset.json";
+import salada from "@/assets/salada.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -59,7 +60,7 @@ const menu: { title: string; items: { name: string; desc: string; price: string;
       { name: "Cremoso", desc: "Hambúrguer 150g, queijo americano, cebola caramelizada, catupiry, bacon e maionese", price: "38,00", image: cremoso.url },
       { name: "Costela", desc: "Hambúrguer 150g, queijo americano, costela desfiada, catupiry e alho frito", price: "45,00", image: costela.url },
       { name: "Cupim", desc: "Hambúrguer 150g, queijo americano, cupim desfiado, catupiry e alho frito", price: "45,00" },
-      { name: "Salada", desc: "Hambúrguer 150g, queijo americano, cebola, alface, tomate e maionese da casa", price: "32,00" },
+      { name: "Salada", desc: "Hambúrguer 150g, queijo americano, cebola, alface, tomate e maionese da casa", price: "32,00", image: salada.url },
       { name: "Salada Bacon", desc: "Hambúrguer 150g, queijo americano, bacon, cebola, alface, tomate e maionese da casa", price: "39,00" },
       { name: "Texas", desc: "Hambúrguer 150g, queijo americano, bacon crocante e maionese da casa", price: "36,00" },
       { name: "Burger", desc: "Hambúrguer 150g, queijo americano e maionese da casa", price: "29,00" },
