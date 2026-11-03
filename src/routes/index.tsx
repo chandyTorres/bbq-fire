@@ -10,6 +10,7 @@ import cremoso from "@/assets/cremoso-atual.jpeg.asset.json";
 import costela from "@/assets/costela.jpeg.asset.json";
 import salada from "@/assets/salada-nova.jpeg.asset.json";
 import saladaBacon from "@/assets/salada-bacon.jpeg.asset.json";
+import texas from "@/assets/texas.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -63,7 +64,7 @@ const menu: { title: string; items: { name: string; desc: string; price: string;
       { name: "Cupim", desc: "Hambúrguer 150g, queijo americano, cupim desfiado, catupiry e alho frito", price: "45,00" },
       { name: "Salada", desc: "Hambúrguer 150g, queijo americano, cebola, alface, tomate e maionese da casa", price: "32,00", image: salada.url },
       { name: "Salada Bacon", desc: "Hambúrguer 150g, queijo americano, bacon, cebola, alface, tomate e maionese da casa", price: "39,00", image: saladaBacon.url },
-      { name: "Texas", desc: "Hambúrguer 150g, queijo americano, bacon crocante e maionese da casa", price: "36,00" },
+      { name: "Texas", desc: "Hambúrguer 150g, queijo americano, bacon crocante e maionese da casa", price: "36,00", image: texas.url },
       { name: "Burger", desc: "Hambúrguer 150g, queijo americano e maionese da casa", price: "29,00" },
       { name: "Kids", desc: "Hambúrguer 150g, queijo americano e maionese. Acompanha fritas e suco Kapo", price: "30,00" },
     ],
