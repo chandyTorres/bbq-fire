@@ -11,6 +11,7 @@ import costela from "@/assets/costela.jpeg.asset.json";
 import salada from "@/assets/salada-nova.jpeg.asset.json";
 import saladaBacon from "@/assets/salada-bacon.jpeg.asset.json";
 import texas from "@/assets/texas.jpeg.asset.json";
+import burger from "@/assets/burger.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -65,7 +66,7 @@ const menu: { title: string; items: { name: string; desc: string; price: string;
       { name: "Salada", desc: "Hambúrguer 150g, queijo americano, cebola, alface, tomate e maionese da casa", price: "32,00", image: salada.url },
       { name: "Salada Bacon", desc: "Hambúrguer 150g, queijo americano, bacon, cebola, alface, tomate e maionese da casa", price: "39,00", image: saladaBacon.url },
       { name: "Texas", desc: "Hambúrguer 150g, queijo americano, bacon crocante e maionese da casa", price: "36,00", image: texas.url },
-      { name: "Burger", desc: "Hambúrguer 150g, queijo americano e maionese da casa", price: "29,00" },
+      { name: "Burger", desc: "Hambúrguer 150g, queijo americano e maionese da casa", price: "29,00", image: burger.url },
       { name: "Kids", desc: "Hambúrguer 150g, queijo americano e maionese. Acompanha fritas e suco Kapo", price: "30,00" },
     ],
   },
