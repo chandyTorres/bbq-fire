@@ -5,7 +5,7 @@ import hero from "@/assets/hero.jpg";
 import logo from "@/assets/logo.jpg.asset.json";
 import crispy from "@/assets/crispy.jpeg.asset.json";
 import onion from "@/assets/onion.jpeg.asset.json";
-import prime from "@/assets/prime.jpeg.asset.json";
+import prime from "@/assets/prime-novo.jpeg.asset.json";
 import cremoso from "@/assets/cremoso-atual.jpeg.asset.json";
 import costela from "@/assets/costela.jpeg.asset.json";
 
