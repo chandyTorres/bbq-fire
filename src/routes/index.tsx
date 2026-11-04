@@ -14,6 +14,7 @@ import texas from "@/assets/texas.jpeg.asset.json";
 import burger from "@/assets/burger.png.asset.json";
 import kids from "@/assets/kids.png.asset.json";
 import cupim from "@/assets/cupim.jpeg.asset.json";
+import batataCostela from "@/assets/batata-costela.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
