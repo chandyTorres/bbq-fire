@@ -16,6 +16,7 @@ import kids from "@/assets/kids.png.asset.json";
 import cupim from "@/assets/cupim.jpeg.asset.json";
 import batataCostela from "@/assets/batata-costela.png.asset.json";
 import batataCupim from "@/assets/batata-cupim.png.asset.json";
+import onionIndividual from "@/assets/onion-individual.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -81,7 +82,7 @@ const menu: { title: string; items: { name: string; desc: string; price: string;
       { name: "Batata 400g", desc: "400g de batata frita", price: "30,00" },
       { name: "Batata Costela", desc: "400g de batata, 200g de costela desfiada e sour cream", price: "50,00", image: batataCostela.url },
       { name: "Batata Cupim", desc: "400g de batata, 200g de cupim desfiado e sour cream", price: "50,00", image: batataCupim.url },
-      { name: "Onion Individual", desc: "8 anéis de cebola", price: "15,00" },
+      { name: "Onion Individual", desc: "8 anéis de cebola", price: "15,00", image: onionIndividual.url },
       { name: "Onion Família", desc: "20 anéis de cebola", price: "35,00" },
     ],
   },
