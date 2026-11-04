@@ -18,6 +18,7 @@ import batataCostela from "@/assets/batata-costela.png.asset.json";
 import batataCupim from "@/assets/batata-cupim.png.asset.json";
 import onionIndividual from "@/assets/onion-individual.jpeg.asset.json";
 import onionFamilia from "@/assets/onion-familia.jpeg.asset.json";
+import batataIndividual from "@/assets/batata-individual.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
